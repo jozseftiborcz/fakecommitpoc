@@ -1,0 +1,8 @@
+#!/bin/bash
+# Let's fake a commit!
+# reference: https://checkmarx.com/blog/unverified-commits-are-you-unknowingly-trusting-attackers-code/
+
+export GIT_AUTHOR_DATE="2020-01-01 01:01:01"
+export GIT_COMMITTER_DATE="2020-02-02 02:02:02"
+git config user.name = "tibjozdevel1"
+git config user.email = "tibjozdevel1@gmail.com"
